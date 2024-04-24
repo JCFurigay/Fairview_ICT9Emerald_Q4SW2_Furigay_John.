@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<title> Q4 Practice 3</title>
+	<meta charset="utf-8">
+	<meta name="viewreport" content="width+de-width, intial-scale=1">
+	<link rel="stylesheet" href="https://s+cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+   
+    <style>
+    	img {
+    		height: 200;
+    		width: 200;
+    </style>
+
+</head>
+
+<body>
+	<center>
+		<div class="col-md-4">
+			<img src="https://help.apple.com/assets/63FD49E28D6264536445EC7D/63FD49E28D6264536445EC84/en_US/f19c7e914f0adb59c0833d00d09f1ea7.png">
+		<div class="col-md-6" id="box">
+			<form class="form-group">
+            <label>Enter the 1st Number</label>
+            <input type="number" name="form-control" id="num1" height="100">
+            <br>
+              <label>Enter the 2nd Number</label>
+            <input type="number" name="form-control" id="num2" height="100">
+             <br>
+            <button class="btn btn-success" onclick="Add()"> Add</button>
+         </form>
+         </div>
+         </div>
+         </br>
+
+
+
+
+            <details ontoggle="message()">
+            	<summary>Click here</summary>
+            	<i>Click the buttons below to calculate</i>
+            </details>
+           
+            
+		</form>
+  </div>
+</center>
+
+<script type="text/javascript">
+
+       function Add(){
+       var num1 = document.getElementById("num1").value;
+       var num2 = document.getElementById("num2").value;
+       var sum  = Number(num1) + Number(num2);
+
+       window.alert('The sum of two numbers is:' + sum);
+
+     }
+
+
+	</script>
+</body>
+</html>
